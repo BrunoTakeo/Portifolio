@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Protest Revolution", Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, #f3e97f,#fff4cc,#ff7575);
+    min-height: 125vh;
+    container-type:inline-size;
+}
+h1{
+    font-weight: 500;
+    padding: 1rem 2rem;
+    text-align: center;
+    background: rgb(216, 49, 49);
+}
+.Hidden{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(100%);
+}
+h2{
+    font-weight: 500;
+}
+h3{
+    font-weight: 500;
+}
+.Dados{
+    position: relative;
+    float: left;
+    width: 300px;
+    border: 3px solid;
+    padding: 1rem;
+    gap: 30px;
+}
+img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 5px;
+    border-radius: 50%;
+}
+.IMG1{
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.2;
+}
+.IMG2{
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.2;
+    left: 76%;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
